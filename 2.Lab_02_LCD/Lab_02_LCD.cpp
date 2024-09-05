@@ -6,8 +6,7 @@
 // Blinking rate in milliseconds
 // Blinking rate in milliseconds
 #define BLINKING_RATE 500 // Define el tiempo en milisegundos
-BusOut LEDS(PB_12, PB_13, PB_14, PB_15, PA_8, PA_9, PA_10, PA_11, PA_12, PA_15,
-            PB_3, PB_4, PB_5, PB_6, PB_7, PB_8); // Secuencia 0 para probar
+BusOut LEDS(PB_12, PB_13, PB_14, PB_15, PA_8, PA_9, PA_10, PA_11, PA_12, PA_15,PB_3, PB_4, PB_5, PB_6, PB_7, PB_8); // Secuencia 0 para probar
 
 BusOut LEDS_1(PA_15, PA_10, PB_13, PB_12, PA_11, PA_12, PB_5, PB_6, PB_7, PB_8,PB_4, PA_8, PB_15, PB_14, PA_9, PB_3); // Secuencia 1
 

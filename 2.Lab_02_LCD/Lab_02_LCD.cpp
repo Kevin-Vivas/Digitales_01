@@ -9,8 +9,7 @@
 BusOut LEDS(PB_12, PB_13, PB_14, PB_15, PA_8, PA_9, PA_10, PA_11, PA_12, PA_15,
             PB_3, PB_4, PB_5, PB_6, PB_7, PB_8); // Secuencia 0 para probar
 
-BusOut LEDS_1(PA_15, PA_10, PB_13, PB_12, PA_11, PA_12, PB_5, PB_6, PB_7, PB_8,
-              PB_4, PA_8, PB_15, PB_14, PA_9, PB_3); // Secuencia 1
+BusOut LEDS_1(PA_15, PA_10, PB_13, PB_12, PA_11, PA_12, PB_5, PB_6, PB_7, PB_8,PB_4, PA_8, PB_15, PB_14, PA_9, PB_3); // Secuencia 1
 
 BusOut LEDS_2A(PB_6, PA_15, PA_12, PA_11, PB_12, PA_10); // Secuencia 2A
 BusOut LEDS_2B(PB_14, PA_9, PA_8, PB_4, PB_8, PB_3);     // Secuencia 2B
@@ -20,16 +19,12 @@ BusOut LEDS_3B(PA_11, PA_10, PA_9, PA_8);   // Secuencia 2B
 BusOut LEDS_3C(PA_12, PA_15, PB_3, PB_4);   // Secuencia 2B
 BusOut LEDS_3D(PB_5, PB_6, PB_7, PB_8);     // Secuencia 2B
 
-BusOut LEDS_4(PB_4, PB_7, PB_6, PA_12, PA_11, PB_13, PB_14, PA_8, PB_3, PA_15,
-              PA_10, PA_9);
+BusOut LEDS_4(PB_4, PB_7, PB_6, PA_12, PA_11, PB_13, PB_14, PA_8, PB_3, PA_15,PA_10, PA_9);
 
-BusOut LEDS_5A(PA_11, PB_6, PB_3, PB_8, PB_4, PB_7, PA_15,
-               PB_5); // Secuencia 5A
-BusOut LEDS_5B(PA_12, PB_13, PA_9, PB_15, PA_8, PB_14, PA_10,
-               PB_12); // Secuencia 5B
+BusOut LEDS_5A(PA_11, PB_6, PB_3, PB_8, PB_4, PB_7, PA_15, PB_5); // Secuencia 5A
+BusOut LEDS_5B(PA_12, PB_13, PA_9, PB_15, PA_8, PB_14, PA_10,PB_12); // Secuencia 5B
 
-/*************************************** LCD
- * ******************************************************************/
+/*************************************** LCD*******************************************************************/
 
 BusOut D0_A_D7(PA_1, PA_2, PA_3, PA_4, PA_5, PA_6, PA_7, PB_0); // Secuencia 2A
 DigitalOut EN(PA_0);
@@ -52,8 +47,7 @@ void MENSAJE6(void); // Mensaje de la quinta secuencia
 void INICIALIZAR(void);
 //
 
-BusIn INTERRUPTOR(PB_11, PB_10,
-                  PB_1); // Bus del Interreptor para elegir las secuencias
+BusIn INTERRUPTOR(PB_11, PB_10,PB_1); // Bus del Interreptor para elegir las secuencias
 
 void F0(void); // Funcion para la secuencia de prueba
 void F1(void); // Funcion para la Primera secuencia
@@ -619,5 +613,4 @@ void INICIALIZAR(void) {
   R_I(0b00111000); // Activa la segunda linea y estable ce la interfaz en 8 bits
   R_I(0b00001100); // R_I(0b00001100) Sin cursor y sin parpadeo
   R_I(0b00000001);
-       //
 }

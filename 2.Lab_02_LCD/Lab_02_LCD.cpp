@@ -76,27 +76,14 @@ int main(void) {
     // implica leer  puerto de la selecion (dip swich)
     //  determinar la secuencia que debe realizar
     {
-    case 0:
-      F0();
-      break;
-    case 1:
-      F1();
-      break;
-    case 2:
-      F2();
-      break;
-    case 3:
-      F3();
-      break;
-    case 4:
-      F4();
-      break;
-    case 5:
-      F5();
-      break;
-    default:
-      LEDS = 0;
-      break;
+        case 0 :F0();break;
+        case 1 :F1();break;
+        case 2 :F2();break;
+        case 3 :F3();break;
+        case 4 :F4();break;
+        case 5 :F5();break;
+        default :LEDS=0;break;
+
     }
   }
 }
